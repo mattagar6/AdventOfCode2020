@@ -101,7 +101,6 @@ def part2():
 	for u in topo:
 		dp[u] = 1
 		if u not in g:
-			dp[u] = 1
 			continue
 		for v, cnt in g[u]:
 			dp[u] += cnt * dp[v]
